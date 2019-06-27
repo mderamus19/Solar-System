@@ -6,6 +6,12 @@ const planets = ["mercury", "venus", "earth", "mars", "jupiter", "saturn", "uran
     Use string templates to construct the DOM elements.
 */
 const planetEl = document.getElementById("planets")
+planetEl.innerHTML = `<h1>PLANETS</h1>` 
+planets.forEach(planetObj => {
+    planetEl.innerHTML += `
+    <h2>${planetObj}</h2>
+    `
+});
 
 /*
     Use the map method to create a new array where the

@@ -19,8 +19,12 @@ planets.forEach(planetObj => {
     `toUpperCase()` method on strings.
 
 */
-
-
+// const upperEl = document.getElementById("upperPlanets")
+// upperEl.innerHTML = `<h1>Uppercase Planets</>`
+const upperCasePlanets = planets.map(planet => {
+    return planet.charAt(0).toUpperCase() + planet.slice(1)
+})
+console.log(upperCasePlanets)
 /*
     Use the filter method to create a new array that
     contains planets with the letter 'e'. Use the `includes()`
